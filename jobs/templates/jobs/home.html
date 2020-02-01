@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+{% load staticfiles %}
 
 <head>
   <meta charset="utf-8">
@@ -55,7 +56,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="#">Resume</a>
+          <a class="nav-item nav-link" href="{% static 'resume.pdf' %}">Resume</a>
           <a class="nav-item nav-link" href="#">Blog</a>
           <a class="nav-item nav-link" href="#">Twitter</a>
         </div>
@@ -73,6 +74,7 @@
         <p>
           <a href="mailto:spamee65@gmail.com" class="btn btn-primary my-2">Email me</a>
         </p>
+        <img src="{% static 'BrendanIcelandC.jpg' %}" />
       </div>
     </section>
 
