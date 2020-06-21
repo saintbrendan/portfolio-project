@@ -134,6 +134,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 try:
-    from local_settings import *
+    print ('about to import')
+    from .local_settings import *
+    print('just imported')
 except ImportError:
+    print('Threw an ImportError!')
     pass
